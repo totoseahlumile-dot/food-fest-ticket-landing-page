@@ -35,7 +35,7 @@ This project was built as Exercise 02 of the Frontend Web Development module. It
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/food-fest-ticket-landing-page.git
+git clone https://github.com/totoseahlumile-dot/food-fest-ticket-landing-page.git
 
 # 2. Navigate into the project
 cd food-fest-ticket-landing-page
