@@ -6,6 +6,7 @@
 }
 
 :root {
+  /* Colors */
   --orange:     #E8600A;
   --orange-dark:#C4510A;
   --gold:       #F5A623;
@@ -17,15 +18,34 @@
   --grey-text:  #6B7280;
   --green:      #22C55E;
   --border:     #E5E1DC;
+  
+  /* Theme colors - Light mode (default) */
+  --bg-primary:   #FFFFFF;
+  --bg-secondary: #F8F6F2;
+  --text-primary: #1A1A2E;
+  --text-secondary: #6B7280;
+  --border-color: #E5E1DC;
+  
+  /* Fonts */
   --font-head:  'Montserrat', sans-serif;
   --font-body:  'Inter', sans-serif;
 }
 
+/* Dark mode theme */
+html.dark-mode {
+  --bg-primary:   #1A1A2E;
+  --bg-secondary: #0F1629;
+  --text-primary: #FFFFFF;
+  --text-secondary: #B0B8C1;
+  --border-color: #2D3F5C;
+}
+
 body {
   font-family: var(--font-body);
-  color: var(--dark);
-  background: var(--white);
+  color: var(--text-primary);
+  background: var(--bg-primary);
   line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 img { display: block; max-width: 100%; }

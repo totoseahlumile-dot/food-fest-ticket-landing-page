@@ -67,6 +67,11 @@ export default {
 .ticket-section {
   background: var(--off-white);
   padding: 5rem 2rem;
+  transition: background 0.3s;
+}
+
+html.dark-mode .ticket-section {
+  background: var(--bg-secondary);
 }
 
 .ticket-section__intro {
@@ -79,8 +84,9 @@ export default {
   font-family: var(--font-head);
   font-size: clamp(1.6rem, 3vw, 2.2rem);
   font-weight: 800;
-  color: var(--dark);
+  color: var(--text-primary);
   margin-bottom: 0.75rem;
+  transition: color 0.3s;
 }
 
 .ticket-section__sub {
@@ -93,8 +99,9 @@ export default {
   margin-top: 0.75rem;
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--grey-text);
+  color: var(--text-secondary);
   animation: fadeIn 0.3s ease;
+  transition: color 0.3s;
 }
 
 /* 3-column grid on desktop, 1 column on mobile */

@@ -98,7 +98,7 @@ export default {
 </script>
 
 <style scoped>
-/* ── Base card ── */
+/* ─ Base card ─ */
 .ticket-card {
   position: relative;
   background: var(--white);
@@ -108,7 +108,12 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.3s, border-color 0.3s;
+}
+
+html.dark-mode .ticket-card {
+  background: var(--bg-secondary);
+  border-color: var(--border-color);
 }
 
 .ticket-card:hover {
@@ -116,26 +121,39 @@ export default {
   box-shadow: 0 12px 32px rgba(0,0,0,0.1);
 }
 
-/* ── Featured (Silver) ── */
+html.dark-mode .ticket-card:hover {
+  box-shadow: 0 12px 32px rgba(0,0,0,0.3);
+}
+
+/* ─ Featured (Silver) ─ */
 .ticket-card--featured {
-  border-color: var(--orange);
+  border-color: var(--gold);
   box-shadow: 0 8px 24px rgba(232, 96, 10, 0.15);
 }
 
-/* ── Gold tier ── */
+html.dark-mode .ticket-card--featured {
+  box-shadow: 0 8px 24px rgba(232, 96, 10, 0.3);
+}
+
+/* ─ Gold tier ─ */
 .ticket-card--gold {
   background: var(--dark-card);
   border-color: var(--gold);
   color: var(--white);
 }
 
-/* ── "MOST POPULAR" badge ── */
+html.dark-mode .ticket-card--gold {
+  background: #1A2F4D;
+  border-color: var(--gold);
+}
+
+/* ─ "MOST POPULAR" badge ─ */
 .ticket-card__badge {
   position: absolute;
   top: -14px;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--orange);
+  background: var(--gold);
   color: var(--white);
   font-size: 0.65rem;
   font-weight: 700;
@@ -158,6 +176,11 @@ export default {
   font-weight: 700;
   letter-spacing: 0.12em;
   color: var(--grey-text);
+  transition: color 0.3s;
+}
+
+html.dark-mode .ticket-card__tier {
+  color: var(--text-secondary);
 }
 
 .ticket-card--gold .ticket-card__tier {
@@ -175,6 +198,10 @@ export default {
   justify-content: center;
   border-radius: 50%;
   transition: color 0.2s, transform 0.15s;
+}
+
+html.dark-mode .ticket-card__fav {
+  color: var(--text-secondary);
 }
 
 .ticket-card__fav:hover {
@@ -198,8 +225,9 @@ export default {
   font-family: var(--font-head);
   font-size: 1.15rem;
   font-weight: 700;
-  color: var(--dark);
+  color: var(--text-primary);
   margin-bottom: 0.25rem;
+  transition: color 0.3s;
 }
 
 .ticket-card--gold .ticket-card__name {
@@ -211,8 +239,9 @@ export default {
   font-family: var(--font-head);
   font-size: 2rem;
   font-weight: 800;
-  color: var(--dark);
+  color: var(--text-primary);
   margin-bottom: 0.75rem;
+  transition: color 0.3s;
 }
 
 .ticket-card--featured .ticket-card__price {
@@ -237,7 +266,12 @@ export default {
   align-items: center;
   gap: 0.5rem;
   font-size: 0.88rem;
-  color: var(--dark);
+  color: var(--text-primary);
+  transition: color 0.3s;
+}
+
+html.dark-mode .ticket-card__benefits li {
+  color: var(--text-secondary);
 }
 
 .ticket-card--gold .ticket-card__benefits li {
