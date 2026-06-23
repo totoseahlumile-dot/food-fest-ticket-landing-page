@@ -21,7 +21,7 @@ This project was built as Exercise 02 of the Frontend Web Development module. It
 
 - Vue 3 (Options API)
 - Vite
-- Vanilla CSS (CSS variables, scoped styles)
+- CSS (CSS variables, scoped styles)
 
 ---
 
