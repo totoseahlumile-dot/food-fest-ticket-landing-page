@@ -88,6 +88,8 @@ src/
 
 ## Screenshot
 
+<img width="1896" height="870" alt="image" src="https://github.com/user-attachments/assets/f115b2df-a424-4a9a-ae30-05289d5be629" />
+
 <img width="1900" height="867" alt="image" src="https://github.com/user-attachments/assets/79d82e24-7347-4e96-87dd-5b6db2cbcb2e" />
 
 
