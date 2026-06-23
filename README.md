@@ -77,12 +77,12 @@ src/
 
 ## Features
 
-- 🎟️ Three ticket tiers: Bronze, Silver (featured), Gold
-- ❤️ Favourite toggle on each card with live count
-- ⭐ Featured tier highlighted with badge and distinct styling
-- 🌙 Gold tier dark card treatment
-- 📱 Fully responsive — mobile, tablet, desktop
-- ✨ Hover animations on cards and buttons
+-  Three ticket tiers: Bronze, Silver (featured), Gold
+-  Favourite toggle on each card with live count
+-  Featured tier highlighted with badge and distinct styling
+-  Gold tier dark card treatment
+-  Fully responsive — mobile, tablet, desktop
+-  Hover animations on cards and buttons
 
 ---
 
