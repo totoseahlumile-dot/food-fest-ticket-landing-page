@@ -1,6 +1,12 @@
 <template>
   <nav class="navbar">
-    <div class="navbar__brand">Cape Town Food Fest</div>
+    <div class="navbar__brand">
+      <span class="navbar__brand-mark" aria-hidden="true">🍴</span>
+      <span class="navbar__brand-copy">
+        <span>Cape Town</span>
+        <strong>Food Fest</strong>
+      </span>
+    </div>
 
     <!-- Hamburger for mobile -->
     <button class="navbar__toggle" @click="menuOpen = !menuOpen" aria-label="Toggle menu">
@@ -13,7 +19,7 @@
       <li><a href="#vendors" @click="menuOpen = false">Vendors</a></li>
     </ul>
 
-    <!-- Dark mode toggle button -->
+    
     <button 
       class="navbar__dark-toggle" 
       @click="$emit('toggle-dark-mode')"
@@ -93,11 +99,58 @@ html.dark-mode .navbar {
 }
 
 .navbar__brand {
-  font-family: var(--font-head);
-  font-weight: 800;
-  font-size: 1.1rem;
-  color: var(--orange);
   margin-right: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.navbar__brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #E8600A 0%, #F5A623 100%);
+  color: #ffffff;
+  box-shadow: 0 12px 25px rgba(232, 96, 10, 0.25);
+  font-size: 1rem;
+}
+
+.navbar__brand-copy {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.05;
+}
+
+.navbar__brand-copy span {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--grey-text);
+}
+
+.navbar__brand-copy strong {
+  font-family: var(--font-head);
+  font-size: 1.1rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  background: linear-gradient(90deg, #E8600A 0%, #F5A623 50%, #22C55E 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+html.dark-mode .navbar__brand-mark {
+  background: linear-gradient(135deg, #F5A623 0%, #E8600A 100%);
+  box-shadow: 0 12px 25px rgba(255, 152, 0, 0.22);
+}
+
+html.dark-mode .navbar__brand-copy span {
+  color: var(--text-secondary);
 }
 
 .navbar__links {
