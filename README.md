@@ -1,6 +1,6 @@
 # Cape Town Food Fest — Ticket Landing Page
 
-A Vue 3 single-page landing app for Cape Town Food Fest 2024, built with Vite.
+A Vue 3 single-page landing app for Cape Town Food Fest 2026, built with Vite.
 Displays ticket tiers in reusable card components with favourite toggling and featured tier highlighting.
 
 ---
@@ -88,10 +88,11 @@ src/
 
 ## Screenshot
 
-*(Add a screenshot here after running the project)*
+<img width="1900" height="867" alt="image" src="https://github.com/user-attachments/assets/79d82e24-7347-4e96-87dd-5b6db2cbcb2e" />
+
 
 ---
 
 ## Author
 
-Ozzie · LifeChoices Academy · Frontend Web Development Module 1
+Ahlumile Totose · LifeChoices Academy · Frontend Web Development Module 1
